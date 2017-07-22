@@ -3,17 +3,16 @@ html {
 	height: 100%;
 }
 
-div {
+#bodyContainer {
 	margin: 0 70px;
 }
 body {
 	background: url('https://static.pexels.com/photos/139306/pexels-photo-139306.jpeg');
 	background-size: cover;
 	background-position: 0px -20px;
-	/*background-repeat: no-repeat;*/
 }
 
-ul {
+#navbarContainer {
 	list-style-type: none;
 	margin: 0;
 	padding: 0;
@@ -24,15 +23,17 @@ ul {
 	width: 90%;
 	border-bottom-right-radius: 10px;
 	border-bottom-left-radius: 10px;
-	font-family: 'Wooden';
-	height: 9.5%;
+	font-family: 'Lobster';
+	height: 12%;
 	text-align: center;
-
 }
 
-li {
-	font-size: 3em;
+.navMenuContainer {
+	font-size: 2.5em;
 	display: inline-block;
+	float: left;
+	padding: 0 10px;
+
 }
 a {
 	display: block;
@@ -40,21 +41,17 @@ a {
 	text-align: center;
 	text-decoration: none;
 	color: #662200;
+	height: 40%;
 }
 
 a:hover {
 	background-color: rgba(255, 170, 128, 1);
-	border-bottom-right-radius: 10px;
-	border-bottom-left-radius: 10px;
+	border-radius: 10px;
+	transition: background-color 0.5s;
 }
 
 li:last-child {
 	border-right: none;
-}
-
-@font-face {
-    font-family: Wooden;
-    src: url(Woodplank.ttf);
 }
 
 p {
