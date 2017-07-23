@@ -6,12 +6,13 @@ body {
 	padding: 0;
 	background-image: url(https://static.pexels.com/photos/270360/pexels-photo-270360.jpeg);
 	background-repeat: no-repeat;
-	background-size: cover;
+	background-size: inherit;
+	background-position: -35em 0;
 }
 
 #navbarContainer {
 	list-style-type: none;
-	margin: 0;
+	margin: 0 0 0 4em;
 	padding: 0;
 	background-color: rgba(51, 51, 51, 0.8);
 	overflow: hidden;
