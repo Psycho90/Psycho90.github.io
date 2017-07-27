@@ -1,58 +1,75 @@
 #bodyContainer {
-	margin: 0 5% 0 5%;
+	margin: 0 5% 0 5%;;
 }
 body {
 	margin: 0;
 	padding: 0;
-	background-image: url(https://static.pexels.com/photos/270360/pexels-photo-270360.jpeg);
-	background-repeat: no-repeat;
-	background-size: inherit;
-	background-position: -35em 0;
+	background-color: #d9d9d9;
 }
 
-#navbarContainer {
-	list-style-type: none;
-	margin: 0 0 0 4em;
+h1 {
+	margin: 1%;
 	padding: 0;
-	background-color: rgba(51, 51, 51, 0.8);
-	overflow: hidden;
-	position: fixed;
-	top: 0;
-	left: 10%;
-	width: 70%;
-	border-bottom-right-radius: 10px;
-	border-bottom-left-radius: 10px;
-	height: 3.3em;
-	font-family: 'Play', sans-serif;
 	text-align: center;
-	display: block;
+	font-family: 'Indie Flower', cursive;
+	font-size: 8vw;
+	letter-spacing: 3vw;
 }
 
-ul>.navMenuContainer {
-	font-size: 150%;
-	display: inline-block;
-	float: left;
-	padding: 0 2%;
-
-}
-a {
-	display: block;
-	text-decoration: none;
-	color: #e6e6e6;
+.blackImg {
+	margin: 1%;
+	padding: 0;
+	position: absolute;
+	left: 35vw;
+	top: 20vh;
 }
 
-a:hover {
-	background-color: rgba(0, 0, 0, 1);
-	border-radius: 10px;
-	transition: background-color 0.5s;
+.mainImg {
+	opacity: 0;
+	animation-name: fadeIn;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
 }
 
-li:last-child {
-	border-right: none;
+@keyframes fadeIn {
+	0% {opacity: 0;}
+	10% {opacity: 0;}
+	25% {opacity: 0.3;}
+	50% {opacity: 0.5;}
+	75% {opacity: 0.6;}
+	100% {opacity: 1;}
 }
 
-p {
-	font-size: 1.8em;
-	margin-top: 9.5%;
-	color: #661a00;
+.fireImg {
+	opacity: 0;
+	animation-name: fireLeft;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+    animation-delay: 4s;
+    animation-fill-mode: forwards;
+}
+
+.stormImg {
+	opacity: 0;
+	animation-name: stormRight;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+    animation-delay: 4s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fireLeft {
+	0% {opacity: 1;}
+	100% {left: 25vw; opacity: 1;}
+
+}
+
+@keyframes stormRight {
+	0% {opacity: 1;}
+	100% {left: 45vw; opacity: 1;}
 }
