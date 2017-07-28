@@ -49,12 +49,21 @@ h1 {
 }
 
 .blackImg {
-	animation-name: fadeIn;
+	animation-name: blFadeIn;
     animation-duration: 3s;
     animation-iteration-count: 1;
     animation-timing-function: linear;
     animation-delay: 1.5s;
     animation-fill-mode: forwards;
+}
+
+@keyframes blFadeIn {
+	0% {opacity: 0;}
+	10% {opacity: 0;}
+	25% {opacity: 0.3;}
+	50% {opacity: 0.5;}
+	75% {opacity: 0.6;}
+	100% {opacity: 1;}
 }
 
 .mainImg {
@@ -119,7 +128,7 @@ h1 {
 	display: block;
 }
 
-@media (max-width: 500px) {
+@media screen and (max-width: 500px) {
 	.templetImg {
 		position: absolute;
 		left: 20vw;
@@ -137,7 +146,7 @@ h1 {
 	}
 }
 
-@media (max-width: 800px) {
+@media screen and (max-width: 800px) {
 	.templetImg {
 		position: absolute;
 		left: 28vw;
