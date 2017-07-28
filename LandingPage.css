@@ -40,14 +40,6 @@ h1 {
 	100% {opacity: 1;}
 }
 
-
-
-.templetImg {
-	position: absolute;
-	left: 35vw;
-	opacity: 0;
-}
-
 .blackImg {
 	animation-name: blFadeIn;
     animation-duration: 3s;
@@ -104,13 +96,13 @@ h1 {
 
 @keyframes fireLeft {
 	0% {opacity: 1;}
-	100% {left: 25vw; opacity: 1;}
+	100% {left: 28vw; opacity: 1;}
 
 }
 
 @keyframes stormRight {
 	0% {opacity: 1;}
-	100% {left: 45vw; opacity: 1;}
+	100% {left: 48vw; opacity: 1;}
 }
 
 #barWrapper {
@@ -128,10 +120,20 @@ h1 {
 	display: block;
 }
 
-@media screen and (max-width: 500px) {
+@media (max-width: 1920px) {
 	.templetImg {
 		position: absolute;
-		left: 20vw;
+		left: 38vw;
+		opacity: 0;
+	}
+}
+
+@media (max-width: 414px) 
+	and (device-height: 736px){
+	.templetImg {
+		max-height: 10%;
+		position: absolute;
+		left: 1px;
 	}
 
 	@keyframes fireLeft {
@@ -146,20 +148,21 @@ h1 {
 	}
 }
 
-@media screen and (max-width: 800px) {
+@media (max-width: 1030px) {
 	.templetImg {
+		max-height: 60vh;
 		position: absolute;
-		left: 28vw;
+		left: 32vw;
 	}
 
 	@keyframes fireLeft {
 	0% {opacity: 1;}
-	100% {left: 18vw; opacity: 1;}
+	100% {left: 22vw; opacity: 1;}
 
 	}
 
 	@keyframes stormRight {
 		0% {opacity: 1;}
-		100% {left: 38vw; opacity: 1;}
+		100% {left: 42vw; opacity: 1;}
 	}
 }
