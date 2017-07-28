@@ -25,10 +25,10 @@ h1 {
 	font-size: 8vw;
 	opacity: 0;
 	animation-name: h1FadeIn;
-	animation-duration: 3s;
+	animation-duration: 4s;
     animation-iteration-count: 1;
     animation-timing-function: linear;
-    animation-delay: 1.5s;
+    animation-delay: 0.5s;
     animation-fill-mode: forwards;
 }
 
@@ -42,19 +42,27 @@ h1 {
 
 
 
-.blackImg {
+.templetImg {
 	position: absolute;
 	left: 35vw;
-	width: auto;
+	opacity: 0;
 }
 
-.mainImg {
-	opacity: 0;
+.blackImg {
 	animation-name: fadeIn;
     animation-duration: 3s;
     animation-iteration-count: 1;
     animation-timing-function: linear;
     animation-delay: 1.5s;
+    animation-fill-mode: forwards;
+}
+
+.mainImg {
+	animation-name: fadeIn;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+    animation-delay: 3s;
     animation-fill-mode: forwards;
 }
 
@@ -68,22 +76,20 @@ h1 {
 }
 
 .fireImg {
-	opacity: 0;
 	animation-name: fireLeft;
     animation-duration: 1s;
     animation-iteration-count: 1;
     animation-timing-function: linear;
-    animation-delay: 4.5s;
+    animation-delay: 5s;
     animation-fill-mode: forwards;
 }
 
 .stormImg {
-	opacity: 0;
 	animation-name: stormRight;
     animation-duration: 1s;
     animation-iteration-count: 1;
     animation-timing-function: linear;
-    animation-delay: 4.5s;
+    animation-delay: 5s;
     animation-fill-mode: forwards;
 }
 
@@ -113,8 +119,8 @@ h1 {
 	display: block;
 }
 
-@media (max-width: 500px) {
-	.blackImg {
+@media screen and (max-width: 500px) {
+	.templetImg {
 		position: absolute;
 		left: 20vw;
 	}
@@ -131,8 +137,8 @@ h1 {
 	}
 }
 
-@media (max-width: 800px) {
-	.blackImg {
+@media screen and (max-width: 800px) {
+	.templetImg {
 		position: absolute;
 		left: 28vw;
 	}
