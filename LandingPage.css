@@ -1,5 +1,5 @@
 html {
-	height: 200%;
+	height: 850px;
 	padding: 0;
 	margin: 0;
 	width: auto;
@@ -10,7 +10,6 @@ body {
 	margin: 0;
 	padding: 0;
 	background-color: #000000;
-	height: 170%;
 	width: auto;
 	margin: 0 5% 0 5%;
 }
@@ -70,9 +69,10 @@ h1 {
 @keyframes fadeIn {
 	0% {opacity: 0;}
 	10% {opacity: 0;}
-	25% {opacity: 0.3;}
-	50% {opacity: 0.5;}
+	25% {opacity: 0.2;}
+	50% {opacity: 0.4;}
 	75% {opacity: 0.6;}
+	90% {opacity: 0.8;}
 	100% {opacity: 1;}
 }
 
@@ -81,7 +81,7 @@ h1 {
     animation-duration: 1s;
     animation-iteration-count: 1;
     animation-timing-function: linear;
-    animation-delay: 5s;
+    animation-delay: 5.5s;
     animation-fill-mode: forwards;
 }
 
@@ -90,7 +90,7 @@ h1 {
     animation-duration: 1s;
     animation-iteration-count: 1;
     animation-timing-function: linear;
-    animation-delay: 5s;
+    animation-delay: 5.5s;
     animation-fill-mode: forwards;
 }
 
@@ -106,27 +106,55 @@ h1 {
 }
 
 #barWrapper {
-	display: inline-block;
 	text-align: center;
+	margin: 3vw 15vw;
+	width: 60vw;
+	border: 1px solid white;
+	border-radius: 20px;
 }
 
 #bar {
-	text-align: center;
+	text-align: left;
 	display: inline-block;
+	color: white;
+	font-family: 'Comfortaa', cursive;
+	font-size: 2vw;
+	margin: 1vw;
+}
+
+#contactWrapper {
+	text-align: center;
+	margin: 0 15vw;
+	width: 35vw;
+	border: 1px solid white;
+	border-radius: 20px;
+	text-align: left;
+	display: inline-block;
+	color: white;
+	font-family: 'Comfortaa', cursive;
+	font-size: 2vw;
+	padding-left: 1vw;
+}
+li {
+	list-style-type: none;
+}
+
+a {
+	text-decoration: none;
+	color: white;
 }
 
 #imgWrapper {
-	height: 80vh;
+	height: 600px;
 	display: block;
 }
 
-@media (max-width: 1920px) {
-	.templetImg {
-		position: absolute;
-		left: 38vw;
-		opacity: 0;
-	}
+.templetImg {
+	position: absolute;
+	left: 38vw;
+	opacity: 0;
 }
+
 
 @media (max-width: 414px) 
 	and (device-height: 736px){
