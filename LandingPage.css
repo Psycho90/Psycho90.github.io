@@ -118,7 +118,7 @@ h1 {
 	display: inline-block;
 	color: white;
 	font-family: 'Comfortaa', cursive;
-	font-size: 2vw;
+	font-size: 32px;
 	margin: 1vw;
 }
 
@@ -132,7 +132,7 @@ h1 {
 	display: inline-block;
 	color: white;
 	font-family: 'Comfortaa', cursive;
-	font-size: 2vw;
+	font-size: 32px;
 	padding-left: 1vw;
 }
 li {
