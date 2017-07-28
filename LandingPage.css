@@ -1,27 +1,51 @@
-#bodyContainer {
-	margin: 0 5% 0 5%;;
+html {
+	height: 200%;
+	padding: 0;
+	margin: 0;
+	width: auto;
+	background-color: #000000;
 }
+
 body {
 	margin: 0;
 	padding: 0;
-	background-color: #d9d9d9;
+	background-color: #000000;
+	height: 170%;
+	width: auto;
+	margin: 0 5% 0 5%;
 }
 
 h1 {
-	margin: 1%;
+	margin: 0;
 	padding: 0;
 	text-align: center;
-	font-family: 'Indie Flower', cursive;
+	-webkit-text-stroke: 6px white;
+	font-weight: bold;
+	font-family: 'Sigmar One', cursive;
 	font-size: 8vw;
-	letter-spacing: 3vw;
+	opacity: 0;
+	animation-name: h1FadeIn;
+	animation-duration: 3s;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+    animation-delay: 1.5s;
+    animation-fill-mode: forwards;
 }
 
+@keyframes h1FadeIn {
+	0% {opacity: 0;}
+	25% {opacity: 0.25;}
+	50% {opacity: 0.5;}
+	75% {opacity: 0.75;}
+	100% {opacity: 1;}
+}
+
+
+
 .blackImg {
-	margin: 1%;
-	padding: 0;
 	position: absolute;
 	left: 35vw;
-	top: 20vh;
+	width: auto;
 }
 
 .mainImg {
@@ -30,7 +54,7 @@ h1 {
     animation-duration: 3s;
     animation-iteration-count: 1;
     animation-timing-function: linear;
-    animation-delay: 1s;
+    animation-delay: 1.5s;
     animation-fill-mode: forwards;
 }
 
@@ -49,7 +73,7 @@ h1 {
     animation-duration: 1s;
     animation-iteration-count: 1;
     animation-timing-function: linear;
-    animation-delay: 4s;
+    animation-delay: 4.5s;
     animation-fill-mode: forwards;
 }
 
@@ -59,7 +83,7 @@ h1 {
     animation-duration: 1s;
     animation-iteration-count: 1;
     animation-timing-function: linear;
-    animation-delay: 4s;
+    animation-delay: 4.5s;
     animation-fill-mode: forwards;
 }
 
@@ -72,4 +96,55 @@ h1 {
 @keyframes stormRight {
 	0% {opacity: 1;}
 	100% {left: 45vw; opacity: 1;}
+}
+
+#barWrapper {
+	display: inline-block;
+	text-align: center;
+}
+
+#bar {
+	text-align: center;
+	display: inline-block;
+}
+
+#imgWrapper {
+	height: 80vh;
+	display: block;
+}
+
+@media (max-width: 500px) {
+	.blackImg {
+		position: absolute;
+		left: 20vw;
+	}
+
+	@keyframes fireLeft {
+	0% {opacity: 1;}
+	100% {left: 10vw; opacity: 1;}
+
+	}
+
+	@keyframes stormRight {
+		0% {opacity: 1;}
+		100% {left: 30vw; opacity: 1;}
+	}
+}
+
+@media (max-width: 800px) {
+	.blackImg {
+		position: absolute;
+		left: 28vw;
+	}
+
+	@keyframes fireLeft {
+	0% {opacity: 1;}
+	100% {left: 18vw; opacity: 1;}
+
+	}
+
+	@keyframes stormRight {
+		0% {opacity: 1;}
+		100% {left: 38vw; opacity: 1;}
+	}
 }
