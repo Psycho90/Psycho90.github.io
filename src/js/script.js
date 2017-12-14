@@ -1,6 +1,6 @@
 $(".intro").typeIt({
-	strings: ['Hi, I’m Max, I build websites.', 'And that\'s all you need to know.'],
-	speed: 100,
+	strings: ['And that\'s all you need to know.'],
+	speed: 70,
 	lifeLike: true,
 	breakDelay: 2000,
 })
@@ -8,7 +8,7 @@ $(".intro").typeIt({
 var $btn = $('#btn');
 
 setTimeout(function(){
-	$btn.fadeIn(1000)}, 9000);
+	$btn.fadeIn(1000)}, 3000);
 
 var $portfolio = $('.portfolio-item');
 
