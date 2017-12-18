@@ -1,15 +1,18 @@
-/*----------------MAIN TYPEWRITER EFFECT------------*/
-$(".intro").typeIt({
-	strings: ['And that\'s all you need to know.'],
-	speed: 70,
-	lifeLike: true,
-	breakDelay: 2000,
-})
-/*-------MAIN BTN------------*/
-var $btn = $('#btn');
+$(document).ready(function(){
+	/*----------------MAIN TYPEWRITER EFFECT------------*/
+	$(".intro").typeIt({
+		strings: ['And that\'s all you need to know.'],
+		speed: 70,
+		lifeLike: true,
+		breakDelay: 2000,
+	})
+	/*-------MAIN BTN------------*/
+	var $btn = $('#btn');
 
-setTimeout(function(){
-	$btn.fadeIn(1000)}, 3000);
+	setTimeout(function(){
+		$btn.fadeIn(1000)}, 3000);
+})
+
 /*-------------PORTFOLIO EFFECTS---------*/
 var $portfolio = $('.portfolio-item');
 
